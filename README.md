@@ -61,3 +61,27 @@ Nx comes with local caching already built-in (check your `nx.json`). On CI you m
 - [Join the community](https://nx.dev/community)
 - [Subscribe to the Nx Youtube Channel](https://www.youtube.com/@nxdevtools)
 - [Follow us on Twitter](https://twitter.com/nxdevtools)
+
+
+## To add nest 
+`nx g @nx/nest:app api --frontendProject client`
+
+## To add Angular Material
+`npm install @angular/material && npx nx g @angular/material:ng-add --project client`
+## To add NgRx Store
+`npm install @ngrx/store --save && npx nx g  @ngrx/store:ng-add --project client`
+## To add libs
+`nx g lib libs --directory=libs`
+
+
+## to add new angular project
+`npx nx g @nx/angular:app dashboard --directory=apps`
+
+##  to create new component 
+`npx nx g @nx/angular:component widget-details --directory=apps/dashboard/src/app/widgets --standalone`
+
+##  to create new service
+`nx generate @nrwl/angular:service services/widgets/widgets --project=core-data`
+
+## to generate anglaur library
+`nx generate @nrwl/angular:lib material --routing --directory=libs`
