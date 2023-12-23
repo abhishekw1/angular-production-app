@@ -1,1 +1,9 @@
-<p>home works!</p>
+<mat-card>
+  <mat-card-content
+    ><mat-list role="list">
+      @for (widget of widgets$ | async; track $index) {
+      <mat-list-item role="listitem">{{ widget.title }}</mat-list-item>
+      }
+    </mat-list>
+  </mat-card-content>
+</mat-card>

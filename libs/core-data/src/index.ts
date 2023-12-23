@@ -1,3 +1,2 @@
-export * from './lib/lib.routes';
-
-export * from './lib/core-data/core-data.component';
+export { CoreDataModule } from './lib/core-data.module';
+export { WidgetsService } from './lib/services/widgets/widgets.service';

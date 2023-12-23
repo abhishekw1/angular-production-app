@@ -1,1 +1,8 @@
-<p>widgets works!</p>
+<div class="container">
+  <angular-production-app-widgets-list
+    [widgets$]="widgets$"
+    (updateWidget)="update($event)"
+    (deleteWidget)="delete($event)"
+  ></angular-production-app-widgets-list>
+  <angular-production-app-widget-details (addNewWidget)="create($event)" [widgetUpdate]="widgetUpdate"></angular-production-app-widget-details>
+</div>

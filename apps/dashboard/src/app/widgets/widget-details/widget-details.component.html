@@ -1,1 +1,29 @@
-<p>widget-details works!</p>
+<mat-card>
+  <mat-card-header
+    ><mat-card-title>Widgets Details</mat-card-title></mat-card-header
+  >
+  <mat-card-content>
+    <form class="w-form" [formGroup]="widgetForm" (ngSubmit)="onSubmit()">
+      <mat-form-field class="example-full-width">
+        <mat-label>Title</mat-label>
+        <input matInput placeholder="Enter Title" formControlName="title" />
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Description</mat-label>
+        <textarea
+          matInput
+          placeholder="Enter a description"
+          formControlName="description"
+        ></textarea>
+      </mat-form-field>
+      <div class="btn-container">
+        <button mat-raised-button color="primary" type="submit">
+          {{ btnText }}
+        </button>
+        <button mat-raised-button color="primary" type="button" (click)="onClear()">
+          Clear
+        </button>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>

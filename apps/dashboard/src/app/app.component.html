@@ -1,2 +1,21 @@
-<h1>{{ title }}</h1>
-<router-outlet></router-outlet>
+<angular-production-app-ui-toolbar (toggleSideNav)="sidenav.toggle()" [links]="links" [title]="title"></angular-production-app-ui-toolbar>
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav mode="over" class="sidenav-main">
+    <mat-list>
+      @for (link of links; track $index) {
+      <mat-list-item
+        (click)="onNavigate(link.path); sidenav.toggle()"
+        routerLinkActive="active"
+        ><div class="list-item">
+          <mat-icon>{{ link.icon }}</mat-icon> {{ link.title }}
+        </div></mat-list-item
+      >
+      }
+    </mat-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

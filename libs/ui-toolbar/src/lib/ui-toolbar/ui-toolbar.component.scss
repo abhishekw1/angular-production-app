@@ -1,0 +1,14 @@
+.nav-spacer {
+  flex: 1 1 auto;
+}
+.menu-icon {
+  display: none;
+}
+@media screen and (max-width: 425px) {
+  .menu-icon {
+    display: block;
+  }
+  .nav-list {
+    display: none;
+  }
+}
