@@ -1,0 +1,23 @@
+{
+  "widgets": [
+    {
+      "title": "Remote Widget 01",
+      "description": "Added New Update second",
+      "id": "1"
+    },
+    {
+      "title": "Remote Widget 02",
+      "id": 47
+    },
+    {
+      "title": "Remote Widget 03",
+      "description": null,
+      "id": 12
+    },
+    {
+      "title": "Remote Widget 04",
+      "description": null,
+      "id": 20
+    }
+  ]
+}

@@ -85,3 +85,14 @@ Nx comes with local caching already built-in (check your `nx.json`). On CI you m
 
 ## to generate anglaur library
 `nx generate @nrwl/angular:lib material --routing --directory=libs`
+<<<<<<< Updated upstream
+=======
+
+## branch neam :- dashboard-component-ui
+Now we have added the ui design and shared ui-toolbar component between client and dahsboard app. 
+Also added crud operations in service in libs and shared in client and dashboard app.
+
+## To Generate Nest Js Resource For Crud Application
+
+`nx g @nx/nest:resource widgets --type rest --crud true --directory apps/api/src  --dry-run`
+>>>>>>> Stashed changes
