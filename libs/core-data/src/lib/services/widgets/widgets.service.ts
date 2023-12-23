@@ -7,7 +7,7 @@ import { Widget } from '@angular-production-app/api-interfaces';
 import { environment } from '@env/environment';
 >>>>>>> Stashed changes
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class WidgetsService {
 

@@ -1,4 +1,5 @@
 import { Injectable } from '@nestjs/common';
+import { Widget } from '@angular-production-app/api-interfaces';
 
 @Injectable()
 export class AppService {

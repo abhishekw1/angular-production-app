@@ -1,10 +1,24 @@
-import { Component } from '@angular/core';
+import {
+  Component,
+  Output,
+  EventEmitter,
+  Input,
+  OnChanges,
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MaterialModule } from '@angular-production-app/material';
+import {
+  FormControl,
+  FormGroup,
+  ReactiveFormsModule,
+  Validators,
+} from '@angular/forms';
+import { Widget } from '@angular-production-app/api-interfaces';
 
 @Component({
   selector: 'angular-production-app-widget-details',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, MaterialModule, ReactiveFormsModule],
   templateUrl: './widget-details.component.html',
   styleUrl: './widget-details.component.scss',
 })

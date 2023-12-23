@@ -24,4 +24,10 @@
   </button>
 </mat-toolbar>
 
-<router-outlet></router-outlet>
+<mat-card>
+  <mat-card-content>
+    @for (widget of widgets$ | async ; track $index) {
+      <mat-action-list>{{ widget.title }}</mat-action-list>
+      }
+  </mat-card-content>
+</mat-card>

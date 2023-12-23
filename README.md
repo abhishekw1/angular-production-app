@@ -96,3 +96,8 @@ Also added crud operations in service in libs and shared in client and dashboard
 
 `nx g @nx/nest:resource widgets --type rest --crud true --directory apps/api/src  --dry-run`
 >>>>>>> Stashed changes
+
+## branch neam :- dashboard-component-ui
+Now we have added the ui design and shared ui-toolbar component between client and dahsboard app. 
+Also added crud operations in service in libs and shared in client and dashboard app.
+
