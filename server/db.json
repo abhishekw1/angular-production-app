@@ -1,0 +1,34 @@
+{
+  "widgets": [
+    {
+      "title": "Remote Widget 01",
+      "description": "Added New Update second",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "title": "Remote Widget 02",
+      "description": "Pending..."
+    },
+    {
+      "id": "3",
+      "title": "Remote Widget 03",
+      "description": "Pending..."
+    },
+    {
+      "title": "Remote Widget 04",
+      "description": "Pending....",
+      "id": 79
+    },
+    {
+      "title": "Remote Widget 05",
+      "description": "Added Clear button ",
+      "id": 96
+    },
+    {
+      "title": "Remote Widget 06",
+      "description": "Update I have added",
+      "id": 87
+    }
+  ]
+}
