@@ -5,12 +5,9 @@ import { Widget } from '@angular-production-app/api-interfaces';
 @Injectable()
 export class WidgetsService {
   mockWidgets: Widget[] = [
-    { id: '1', title: 'Nest Widget 01', description: 'This is a Nest widget' },
+    { id: '1', title: 'Nest Widget 011', description: 'This is a Nest widget' },
     { id: '2', title: 'Nest Widget 02', description: 'This is a Nest widget' },
     { id: '3', title: 'Nest Widget 03', description: 'This is a Nest widget' },
-    { id: '11', title: 'Nest Widget 011', description: 'This is a Nest widget' },
-    { id: '12', title: 'Nest Widget 012', description: 'This is a Nest widget' },
-    { id: '13', title: 'Nest Widget 013', description: 'This is a Nest widget' },
   ];
 
   findAll() {

@@ -1,19 +1,13 @@
 import { Injectable } from '@angular/core';
-<<<<<<< Updated upstream
-
-=======
 import { HttpClient } from '@angular/common/http';
 import { Widget } from '@angular-production-app/api-interfaces';
 import { environment } from '@env/environment';
->>>>>>> Stashed changes
 @Injectable({
   providedIn: 'root',
 })
 export class WidgetsService {
-
-<<<<<<< Updated upstream
-  constructor() { }
-=======
+  model = "widgets";
+  constructor(private http: HttpClient) {}
   all() {
     return this.http.get<Widget[]>(this.getUrl());
   }
@@ -30,7 +24,7 @@ export class WidgetsService {
     return this.http.patch(this.getUrlWithId(widget.id), widget);
   }
 
-  delete(id:string){
+  delete(id: string) {
     return this.http.delete(this.getUrlWithId(id));
   }
   private getUrl() {
@@ -39,5 +33,4 @@ export class WidgetsService {
   private getUrlWithId(id: string | null) {
     return `${this.getUrl()}/${id}`;
   }
->>>>>>> Stashed changes
 }

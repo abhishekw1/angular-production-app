@@ -22,9 +22,6 @@ import { Widget } from '@angular-production-app/api-interfaces';
   templateUrl: './widget-details.component.html',
   styleUrl: './widget-details.component.scss',
 })
-<<<<<<< Updated upstream
-export class WidgetDetailsComponent {}
-=======
 export class WidgetDetailsComponent implements OnChanges {
   @Input() widgetUpdate: Widget | undefined;
   @Output() addNewWidget = new EventEmitter<{
@@ -64,4 +61,3 @@ export class WidgetDetailsComponent implements OnChanges {
     this.widgetForm.reset();
   }
 }
->>>>>>> Stashed changes
