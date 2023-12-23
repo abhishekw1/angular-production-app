@@ -10,9 +10,4 @@ export class AppController {
   getData() {
     return this.appService.getData();
   }
-
-  @Get('widgets')
-  getWidgets(){
-    return this.appService.getWidgets();
-  }
 }

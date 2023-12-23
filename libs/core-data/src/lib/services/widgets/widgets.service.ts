@@ -1,14 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Widget } from '@angular-production-app/api-interfaces';
-const API_ENDPOINT = 'http://localhost:3000/';
+import { environment } from '@env/environment';
 @Injectable({
   providedIn: 'root',
 })
 export class WidgetsService {
-  model = 'widgets';
+  model = "widgets";
   constructor(private http: HttpClient) {}
-
   all() {
     return this.http.get<Widget[]>(this.getUrl());
   }
@@ -22,14 +21,14 @@ export class WidgetsService {
   }
 
   update(widget: Widget) {
-    return this.http.put(this.getUrlWithId(widget.id), widget);
+    return this.http.patch(this.getUrlWithId(widget.id), widget);
   }
 
-  delete(id:string){
+  delete(id: string) {
     return this.http.delete(this.getUrlWithId(id));
   }
   private getUrl() {
-    return `${API_ENDPOINT}${this.model}`;
+    return `${environment.apiEndpoint}${this.model}`;
   }
   private getUrlWithId(id: string | null) {
     return `${this.getUrl()}/${id}`;

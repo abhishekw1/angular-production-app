@@ -6,29 +6,18 @@
       "id": "1"
     },
     {
-      "id": "2",
       "title": "Remote Widget 02",
-      "description": "Pending..."
+      "id": 47
     },
     {
-      "id": "3",
       "title": "Remote Widget 03",
-      "description": "Pending..."
+      "description": null,
+      "id": 12
     },
     {
       "title": "Remote Widget 04",
-      "description": "Pending....",
-      "id": 79
-    },
-    {
-      "title": "Remote Widget 05",
-      "description": "Added Clear button ",
-      "id": 96
-    },
-    {
-      "title": "Remote Widget 06",
-      "description": "Update I have added",
-      "id": 87
+      "description": null,
+      "id": 20
     }
   ]
 }

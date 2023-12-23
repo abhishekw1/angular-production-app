@@ -50,7 +50,7 @@ export class WidgetDetailsComponent implements OnChanges {
     const wpId = this.widgetUpdate?.id;
     const widget = {
       ...this.widgetForm.value,
-      id: wpId ? wpId : Math.floor(Math.random() * 100),
+      id: wpId ? wpId : '',
     };
     this.addNewWidget.emit({ widget: widget, isUpdate: !!wpId });
     this.onClear();
